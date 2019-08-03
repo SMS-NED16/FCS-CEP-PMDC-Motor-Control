@@ -16,14 +16,14 @@ TE-EE 16-17 Section D, Spring 2019
 | EE-16165    | Syed Daniyal Ali Shah | Routh Criteria, Root Loci, Research, Report |
 | EE-16084    | Aymen Batool | Theory, Literature Review, Research, Report |
 
-## Deliverables
+## Workflow
 - Derived the transfer function for a generic PMDC motor as a feedback control system in terms of its ielectromechanical parameters:
   - `J` - The moment of inertia of the motor's shaft
   - `K_t` - Motor Torque Constant
   - `K_v` - Motor Velocity Constant
   - `R_a` - Armature circuit resistance
   - `L_a` - Armature circuit inductance
-- Used a slotted disc, an Arduino Uno, an LM393 IR RPM sensor, and sketch `measure_RPM.c` to record an [actual PMDC motor](http://www.electronicaestudio.com/docs/SHT-034.pdf)'s response to a step voltage in terms of its RPM, with and without gears coupled to its shaft. 
+- Used a slotted disc, an Arduino Uno, an LM393 IR sensor, and sketch `measure_RPM.c` to record an [actual PMDC motor](http://www.electronicaestudio.com/docs/SHT-034.pdf)'s response to a step voltage in terms of its RPM, with and without gears coupled to its shaft. 
 - Used step response RPM data with a Simulink Model `pmdc_model.slx` and Simulink's parameter estimation toolbox to iteratively obtain approximations for its electromechanical constants for both gear and gearless variants.
 - Performed stability assessment for both variants using
   - Routh-Hurwitz Criteria
