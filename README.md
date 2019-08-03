@@ -3,7 +3,7 @@
 
 Completed as an end-of-semester Complex Engineering Problem (CEP) for EE-374 Feedback Control Systems, a 3rd year course taught as part of BE-Electrical Engineering at NEDUET.
 
-Please see the [report](./fcs-cep-report-draft-05.pdf){:target="_blank"} for more details.
+Please see the [report](./fcs-cep-report-draft-05.pdf) for more details.
 
 ## Group
 TE-EE 16-17 Section D, Spring 2019
