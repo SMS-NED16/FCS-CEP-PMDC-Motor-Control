@@ -23,7 +23,7 @@ TE-EE 16-17 Section D, Spring 2019
   - `K_v` - Motor Velocity Constant
   - `R_a` - Armature circuit resistance
   - `L_a` - Armature circuit inductance
-- Used a slotted disc, an Arduino Uno, an LM393 IR sensor, and sketch `measure_RPM.c` to record an [actual PMDC motor](http://www.electronicaestudio.com/docs/SHT-034.pdf)'s response to a step voltage in terms of its RPM, with and without gears coupled to its shaft. 
+- Used a slotted disc, an Arduino Uno, an LM393 IR sensor, and sketch `measure_rpm.ino` to record an [actual PMDC motor](http://www.electronicaestudio.com/docs/SHT-034.pdf)'s response to a step voltage in terms of its RPM, with and without gears coupled to its shaft. 
 - Used step response RPM data with a Simulink Model `pmdc_model.slx` and Simulink's parameter estimation toolbox to iteratively obtain approximations for its electromechanical constants for both gear and gearless variants.
 - Performed stability assessment for both variants using
   - Routh-Hurwitz Criteria
@@ -32,3 +32,4 @@ TE-EE 16-17 Section D, Spring 2019
 - Implemented a simple, armature resistance-based speed controller with a potentiometer and op-amp.
 - Used Simulinks PID tuning functionality to derive optimal values of PID controller coefficients for both systems. 
 - Compared and contrasted motor response with and without gears. 
+- Developed a simple op-amp and potentiometer based speed control circuit for the PMDC motor that varied armature resistance.
